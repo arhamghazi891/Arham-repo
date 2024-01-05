@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #1B1B32;
+    }
+
+    .header-main {
+        padding-top: 2px;
+        height: 70px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .header-main h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .header-main p {
+        color: #fff;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+        width: 500px;
+        height: 900px;
+        margin: auto;
+    }
+
+    .input-1 {
+        width: 100%;
+        height: 26px;
+        line-height: 20px;
+        background-color: #0A0A23;
+        color: #fff;
+        border-width: 0px;
+    }
+
+    form div label {
+        line-height: 30px;
+        font-size: 15px;
+        color: aliceblue;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p-1 {
+        padding-left: 7px;
+        text-decoration-line: underline;
+        line-height: 50px;
+        color: grey;
+    }
+
+    .p-2 {
+        color: #fff;
+    }
+
+    .p-2 a {
+        color: #fff;
+    }
+
+    .input-2 {
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .div-1 {
+        width: 100%;
+        height: 25px;
+        background-color: #0A0A23;
+    }
+
+    select {
+        width: 100%;
+        height: 25px;
+    }
+
+    textarea {
+        background-color: #0A0A23;
+        color: #fff;
+    }
+
+    .button-1 {
+        padding: 3px;
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 150px;
+        color: #fff;
+        background-color: #64646f;
+        border: solid white;
+        border-width: 1px;
+    }
+</style>
+
+<body>
+    <header class="header-main">
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+    </header>
+
+    <form>
+        <div><label for="Enter Your First Name">Enter Your First Name:</label></div>
+        <input class="input-1" type="text">
+        <div><label for="Enter Your Last Name">Enter Your Last Name:</label></div>
+        <input class="input-1" type="text">
+        <div><label for="Enter Your Email">Enter Your Email:</label></div>
+        <input class="input-1" type="email">
+        <div><label for="Create a New Password">Create a New Password:</label></div>
+        <input class="input-1" type="password">
+        <p class="p-1">______________________________________________________________</p>
+
+        <input class="input-2" type="radio">
+        <p class="p-2">Personal Account</p>
+        <input class="input-2" type="radio">
+        <p class="p-2">Buissness Account</p>
+        <input class="input-2" type="checkbox">
+        <p class="p-2">I accept the <a href="#">terms and conditions</a></p>
+        <p class="p-1">______________________________________________________________</p>
+        <div><label for="Upload a profile picture">Upload a profile picture:</label></div>
+        <div class="div-1"><input class="input-1" type="file"></div>
+        <div><label for="Input your age (years)">Input your age (years):</label></div>
+        <input class="input-1" type="text" maxlength="2">
+        <div><label for="Input your age (years)">How did you hear about us?</label></div>
+        <select name="" id="">
+            <option value="(Select one)">(select one)</option>
+        </select>
+        <div><label for="Provide a bio">Provide a bio:</label></div>
+        <textarea name="text" placeholder="I like coding on the beach..." cols="66" rows="3" maxlength="300"></textarea>
+        <button class="button-1">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
